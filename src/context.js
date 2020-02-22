@@ -31,8 +31,8 @@ class RoomProvider extends Component {
                 order:"sys.createdAt"
             })
         let internal_items = this.formatData(items);
-        let rooms = this.formatData(response.items);
-        rooms = [...internal_items,...rooms];
+        let external_items = this.formatData(response.items);
+        let rooms = [...internal_items,...external_items];
         let featuredRooms = rooms.filter(room => room.featured === true);
         let maxPrice = Math.max(...rooms.map(item=> item.price));
         let maxSize = Math.max(...rooms.map(item=> item.size));
