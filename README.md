@@ -4,11 +4,14 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 https://hotelreact.netlify.com
 
-## Available Scripts
-
+Data is created in Contentful and pulled from there.
 If you want to see your own contentful data, you should replace your Api_Space and Access_Token with process.env.REACT_APP_API_SPACE and process.env.REACT_APP_ACCESS_TOKEN Contentful.js before start the app.
 
 If you want to see just local data, delete "...external_items" in line 35.
+
+## Available Scripts
+
+
 
 In the project directory, you can run:
 
